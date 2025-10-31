@@ -16,16 +16,15 @@ const projects = [
     link: "https://cryptocurrrency-tracker.vercel.app/"
   },
   {
-    title: "React Movie App",
-    description: "Movie discovery platform providing information and statistics about 20+ upcoming and released movies with search and filtering capabilities.",
-    technologies: ["JavaScript", "TMDb API", "React"],
+    title: "BookBazaar",
+    description: "E-commerce platform with comprehensive user and admin functionalities.",
+    technologies: ["JavaScript", "Node.js", "CSS", "MongoDB", "Express.js"],
     highlights: [
-      "User base of 5,000+ users",
-      "50% boost in usability with redesigned interface",
-      "40% reduction in load time",
-      "35% increase in user engagement"
+      "Developed a full-stack e-commerce platform featuring user authentication, authorization, and admin control using,Node.js, Express.js, and MongoDB.",
+      "Implemented user registration, login/logout, profile management, and add-to-cart functionality, enhancing user experience.",
+      "Designed admin panel for product management, user management, and order processing, streamlining administrative tasks.",
     ],
-    link: "#"
+    link: "https://bookbazaar-v45b.onrender.com/"
   }
 ];
 

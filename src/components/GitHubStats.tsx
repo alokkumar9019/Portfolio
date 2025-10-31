@@ -53,7 +53,7 @@ const GitHubStats = () => {
                 <h3 className="text-2xl font-bold">Contribution Calendar</h3>
               </div>
               <img
-                src={`https://ghchart.rshah.org/33d2ff/${username}`}
+                src={`https://ghchart.rshah.org/00ff00/${username}`}
                 alt="GitHub Contribution Calendar"
                 className="w-full h-auto rounded-lg"
               />
