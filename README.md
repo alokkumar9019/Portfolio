@@ -1,73 +1,63 @@
-# Welcome to your Lovable project
+# Resume Glaze Glow
 
-## Project info
+A personal developer portfolio and resume website built with React, TypeScript, Tailwind CSS, and shadcn-ui components.
 
-**URL**: https://lovable.dev/projects/0b796dff-87bb-4973-a56c-d4d03b6423b2
+## About
 
-## How can I edit this code?
+This project showcases the resume, experience, skills, projects, and GitHub statistics of Alok Kumar Singh. It is designed as a modern frontend portfolio with a clean layout and responsive design.
 
-There are several ways of editing your application.
+## Key features
 
-**Use Lovable**
+- Hero section with profile summary and resume download
+- Experience, skills, projects, achievements, and contact sections
+- GitHub statistics cards for repo stats, top languages, streaks, and contributions
+- Responsive design with Tailwind CSS and reusable shadcn-ui components
+- Floating download CTA for quick resume access
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0b796dff-87bb-4973-a56c-d4d03b6423b2) and start prompting.
+## Tech stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn-ui / Radix UI
+- Lucide icons
+- React Router DOM
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Local setup
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+cd resume-glaze-glow-main
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Then open the local Vite URL shown in your terminal.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Available scripts
 
-**Use GitHub Codespaces**
+- `npm run dev` — start the local development server
+- `npm run build` — build the production bundle
+- `npm run preview` — preview the production build locally
+- `npm run lint` — run ESLint across the source files
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Notes
 
-## What technologies are used for this project?
+- GitHub statistics are loaded from external image widgets. If the stats cards do not appear, the external service may be temporarily unavailable.
+- The resume download button is available in the hero section and as a floating action button.
 
-This project is built with:
+## Project structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- `src/components` — reusable UI sections and page components
+- `src/pages/Index.tsx` — main landing page composition
+- `src/assets` — profile images and static assets
+- `src/lib` — utility helpers
 
-## How can I deploy this project?
+## Author
 
-Simply open [Lovable](https://lovable.dev/projects/0b796dff-87bb-4973-a56c-d4d03b6423b2) and click on Share -> Publish.
+Alok Kumar Singh
 
-## Can I connect a custom domain to my Lovable project?
+## License
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+MIT
