@@ -7,11 +7,12 @@ const FloatingDownload = () => {
       <Button
         asChild
         className="
-          relative h-20 w-20 rounded-full p-0
+          relative h-[5.5rem] w-[5.5rem] rounded-full p-0
           bg-gradient-to-r from-blue-500 to-cyan-400
           flex items-center justify-center
           transition-all duration-300
-          hover:scale-110
+          hover:scale-105
+          shadow-[0_0_30px_rgba(56,189,248,0.35)]
         "
       >
         <a
@@ -25,7 +26,7 @@ const FloatingDownload = () => {
 
           {/* Button */}
           <span className="relative z-10 flex items-center justify-center h-full w-full rounded-full">
-            <Download className="h-12 w-12 text-white" />
+            <Download className="h-14 w-14 text-white" />
           </span>
         </a>
       </Button>
