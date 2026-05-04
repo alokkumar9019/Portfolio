@@ -52,29 +52,56 @@ const About = () => {
                 </div>
               </div>
               
-              <div className="border-l-2 border-secondary/30 pl-4">
-                <h4 className="font-bold text-lg mb-1">Frontend Intern</h4>
-                <p className="text-secondary mb-1">PCLnXAi - Ahmedabad</p>
-                <p className="text-muted-foreground text-sm mb-4">July 2025 – Present</p>
-                
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">▹</span>
-                    <span>Developed user-facing features for HRInsight using React.js, JavaScript (ES6+), and Tailwind CSS</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">▹</span>
-                    <span>Collaborated with UX/UI designers to implement interactive dashboards and reporting tools</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">▹</span>
-                    <span>Integrated RESTful APIs for real-time employee data visualization and analytics</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">▹</span>
-                    <span>Improved performance and maintainability by optimizing state management and refining reusable UI components</span>
-                  </li>
-                </ul>
+              <div className="space-y-8">
+                <div className="border-l-2 border-secondary/30 pl-4">
+                  <h4 className="font-bold text-lg mb-1">SDE-1</h4>
+                  <p className="text-secondary mb-1">Inspiron Labs – Bangalore</p>
+                  <p className="text-muted-foreground text-sm mb-4">December 2025 – Present</p>
+
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">▹</span>
+                      <span>Developed reusable React.js + TypeScript components inside a monorepo, cutting new feature build time by 20%.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">▹</span>
+                      <span>Implemented global state with Zustand and integrated GraphQL APIs to reduce redundant network calls.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">▹</span>
+                      <span>Optimized rendering with memoization and efficient state updates, reducing unnecessary re-renders by 30%.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">▹</span>
+                      <span>Modernized legacy frontend modules by migrating JavaScript to TypeScript and built 15+ reusable UI components.</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="border-l-2 border-secondary/30 pl-4">
+                  <h4 className="font-bold text-lg mb-1">SDE-Intern</h4>
+                  <p className="text-secondary mb-1">PCLnXAI – Ahmedabad</p>
+                  <p className="text-muted-foreground text-sm mb-4">July 2025 – October 2025</p>
+
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">▹</span>
+                      <span>Fixed 5+ UI and functional issues for HRInsight and delivered a responsive dark mode with 99% cross-browser compatibility.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">▹</span>
+                      <span>Built 2+ responsive landing pages using reusable React components, improving load speed by 32%.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">▹</span>
+                      <span>Integrated frontend modules with REST APIs to improve data fetch performance and lower UI latency by 40%.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">▹</span>
+                      <span>Refactored component structure and CI/CD integration to improve frontend maintainability and scalability.</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </CardContent>
           </Card>

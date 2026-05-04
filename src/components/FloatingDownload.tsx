@@ -3,18 +3,30 @@ import { Button } from "@/components/ui/button";
 
 const FloatingDownload = () => {
   return (
-    <div className="fixed bottom-8 right-8 z-50 animate-pulse-glow">
-      <Button 
-        size="lg"
-        className="rounded-full bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all duration-300 shadow-[0_0_30px_hsla(189,94%,55%,0.6)] hover:shadow-[0_0_40px_hsla(189,94%,55%,0.8)] p-4"
+    <div className="fixed bottom-6 right-6 z-50">
+      <Button
         asChild
+        className="
+          relative h-20 w-20 rounded-full p-0
+          bg-gradient-to-r from-blue-500 to-cyan-400
+          flex items-center justify-center
+          transition-all duration-300
+          hover:scale-110
+        "
       >
-        <a 
-          href="/Alok_Resume.pdf" 
+        <a
+          href="/Alok_Resume.pdf"
           download
           title="Download Resume"
+          className="flex items-center justify-center h-full w-full"
         >
-          <Download className="w-6 h-6" />
+          {/* Glow */}
+          <span className="absolute inset-0 rounded-full blur-2xl opacity-80 bg-gradient-to-r from-blue-500 to-cyan-400"></span>
+
+          {/* Button */}
+          <span className="relative z-10 flex items-center justify-center h-full w-full rounded-full">
+            <Download className="h-12 w-12 text-white" />
+          </span>
         </a>
       </Button>
     </div>

@@ -68,7 +68,7 @@ const Hero = () => {
           </p>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12">
-            M.Sc. Chemistry @ SVNIT Surat • Frontend Intern @ PCLnXAi • 600+ LeetCode Problems • Passionate about creating beautiful, performant web experiences
+            M.Sc. @ SVNIT Surat • SDE-1 @ Inspiron Labs • Former Frontend Intern @ PCLnXAi • 600+ LeetCode Problems • Passionate about creating beautiful, performant web experiences
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

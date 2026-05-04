@@ -13,27 +13,7 @@ const GitHubStats = () => {
 
         <div className="max-w-6xl mx-auto space-y-8">
           {/* GitHub Stats Cards */}
-          <div className="grid md:grid-cols-2 gap-6">
-            <Card className="bg-card/50 backdrop-blur-sm border-primary/20 card-hover overflow-hidden">
-              <CardContent className="p-0">
-                <img
-                  src={`https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1b26&title_color=33d2ff&icon_color=bf5af2&text_color=c0caf5`}
-                  alt="GitHub Stats"
-                  className="w-full h-auto"
-                />
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card/50 backdrop-blur-sm border-primary/20 card-hover overflow-hidden">
-              <CardContent className="p-0">
-                <img
-                  src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${username}&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1b26&title_color=33d2ff&text_color=c0caf5`}
-                  alt="Top Languages"
-                  className="w-full h-auto"
-                />
-              </CardContent>
-            </Card>
-          </div>
+         
 
           {/* GitHub Streak */}
           <Card className="bg-card/50 backdrop-blur-sm border-primary/20 card-hover overflow-hidden">
