@@ -6,7 +6,6 @@ import Skills from "@/components/Skills";
 import Achievements from "@/components/Achievements";
 import GitHubStats from "@/components/GitHubStats";
 import Contact from "@/components/Contact";
-import FloatingDownload from "@/components/FloatingDownload";
 
 const Index = () => {
   return (
@@ -19,7 +18,6 @@ const Index = () => {
       <Achievements />
       <GitHubStats />
       <Contact />
-      <FloatingDownload />
       
       {/* Footer */}
       <footer className="py-8 border-t border-primary/20">
