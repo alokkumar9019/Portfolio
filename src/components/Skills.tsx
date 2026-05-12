@@ -50,6 +50,17 @@ const languages = [
   
 ];
 
+const softSkills = [
+  { name: "Communication" },
+  { name: "Problem Solving" },
+  { name: "Team Collaboration" },
+  { name: "Leadership" },
+  { name: "Time Management" },
+  { name: "Critical Thinking" },
+  { name: "Adaptability" },
+  { name: "Attention to Detail" },
+];
+
 const Skills = () => {
   // Duplicate the languages array for seamless infinite scroll
   const duplicatedLanguages = [...languages, ...languages];
@@ -61,33 +72,60 @@ const Skills = () => {
           Skills & Expertise
         </h2>
 
-        {/* Auto-scrolling container */}
-        <div className="relative">
-          {/* Gradient overlays for fade effect */}
-          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-background to-transparent z-10" />
-          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background to-transparent z-10" />
+        {/* Technical Skills */}
+        <div className="mb-20">
+          <h3 className="text-2xl md:text-3xl font-semibold text-center mb-12 text-primary">
+            Technical Skills
+          </h3>
           
-          {/* Scrolling content */}
-          <div className="overflow-hidden">
-            <div className="flex animate-scroll-horizontal hover:pause-animation">
-              {duplicatedLanguages.map((lang, index) => (
-                <div
-                  key={index}
-                  className="flex-shrink-0 mx-8 group"
-                >
-                  <div className="flex flex-col items-center justify-center p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-primary/20 transition-all duration-300 hover:border-primary hover:scale-110 hover:shadow-[0_0_30px_hsla(189,94%,55%,0.4)] min-w-[120px]">
-                    <img
-                      src={lang.icon}
-                      alt={lang.name}
-                      className="w-16 h-16 mb-3 transition-transform duration-300 group-hover:scale-110"
-                    />
-                    <span className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
-                      {lang.name}
-                    </span>
+          {/* Auto-scrolling container */}
+          <div className="relative">
+            {/* Gradient overlays for fade effect */}
+            <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-background to-transparent z-10" />
+            <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background to-transparent z-10" />
+            
+            {/* Scrolling content */}
+            <div className="overflow-hidden">
+              <div className="flex animate-scroll-horizontal hover:pause-animation">
+                {duplicatedLanguages.map((lang, index) => (
+                  <div
+                    key={index}
+                    className="flex-shrink-0 mx-8 group"
+                  >
+                    <div className="flex flex-col items-center justify-center p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-primary/20 transition-all duration-300 hover:border-primary hover:scale-110 hover:shadow-[0_0_30px_hsla(189,94%,55%,0.4)] min-w-[120px]">
+                      <img
+                        src={lang.icon}
+                        alt={lang.name}
+                        className="w-16 h-16 mb-3 transition-transform duration-300 group-hover:scale-110"
+                      />
+                      <span className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
+                        {lang.name}
+                      </span>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
+          </div>
+        </div>
+
+        {/* Soft Skills */}
+        <div>
+          <h3 className="text-2xl md:text-3xl font-semibold text-center mb-12 text-primary">
+            Soft Skills
+          </h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            {softSkills.map((skill, index) => (
+              <div
+                key={index}
+                className="flex items-center justify-center p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-primary/20 transition-all duration-300 hover:border-primary hover:scale-105 hover:shadow-[0_0_30px_hsla(189,94%,55%,0.4)]"
+              >
+                <span className="text-sm font-medium text-center text-muted-foreground hover:text-primary transition-colors">
+                  {skill.name}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </div>

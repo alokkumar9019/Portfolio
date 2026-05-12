@@ -3,6 +3,7 @@ import { Download, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
+  { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
   { name: "Skills", href: "#skills" },
@@ -69,7 +70,7 @@ const Navbar = () => {
                 className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all duration-300 rounded-full shadow-[0_0_20px_hsla(189,94%,55%,0.3)]"
                 asChild
               >
-                <a href="/Alok_Resume.pdf" download>
+                <a href="/Alok_Resume.pdf" target="_blank" rel="noopener noreferrer">
                   <Download className="mr-2 w-4 h-4" />
                   Resume
                 </a>
@@ -108,7 +109,7 @@ const Navbar = () => {
                 className="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all duration-300 rounded-full"
                 asChild
               >
-                <a href="/Alok_Resume.pdf" download>
+                <a href="/Alok_Resume.pdf" target="_blank" rel="noopener noreferrer">
                   <Download className="mr-2 w-4 h-4" />
                   Download Resume
                 </a>

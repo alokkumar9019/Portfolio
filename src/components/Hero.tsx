@@ -4,7 +4,7 @@ import profileImage from "@/assets/profile1.jpeg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated background grid */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
       
@@ -87,7 +87,7 @@ const Hero = () => {
               className="group border-2 border-primary/50 hover:border-primary hover:bg-primary/10 text-lg px-8 py-6 rounded-full transition-all duration-300"
               asChild
             >
-              <a href="/Alok_Resume.pdf" download>
+              <a href="/Alok_Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <Download className="mr-2 w-5 h-5 group-hover:animate-bounce" />
                 Download Resume
               </a>
