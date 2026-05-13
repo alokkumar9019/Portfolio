@@ -17,7 +17,8 @@ const FloatingDownload = () => {
       >
         <a
           href="/Alok_Resume.pdf"
-          download
+          target="_blank"
+          rel="noopener noreferrer"
           title="Download Resume"
           className="flex items-center justify-center h-full w-full"
         >

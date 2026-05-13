@@ -25,6 +25,30 @@ const projects = [
       "Designed admin panel for product management, user management, and order processing, streamlining administrative tasks.",
     ],
     link: "https://bookbazaar-v45b.onrender.com/"
+  },
+  {
+    title: "Wanderlust",
+    description: "A modern and responsive travel website built to showcase beautiful destinations, travel experiences, and accommodation listings with an attractive and user-friendly interface.",
+    technologies: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
+    highlights: [
+      "Modern Travel Website UI with clean and attractive design",
+      "Fully responsive design optimized for all devices",
+      "Interactive property and destination listings with smooth navigation",
+      "Optimized frontend performance for fast loading and user experience"
+    ],
+    link: "https://wanderlust-app-pi.vercel.app/"
+  },
+  {
+    title: "Wellness Tracker",
+    description: "A comprehensive wellness tracking application designed to help users monitor their health metrics, track daily activities, and maintain healthy habits with an intuitive and user-friendly interface.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+    highlights: [
+      "Interactive dashboard for tracking multiple health metrics",
+      "User-friendly interface with responsive design",
+      "Data visualization for progress tracking and insights",
+      "Modern frontend architecture with optimized performance"
+    ],
+    link: "https://v0-wellness-tracker-app-136n.vercel.app/"
   }
 ];
 
