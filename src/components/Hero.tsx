@@ -3,6 +3,19 @@ import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/profile1.jpeg";
 
 const Hero = () => {
+  const handleDownloadResume = () => {
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "/Alok_Resume.pdf";
+    downloadLink.download = "Alok_Resume.pdf";
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+
+    setTimeout(() => {
+      window.open("/Alok_Resume.pdf", "_blank", "noopener,noreferrer");
+    }, 100);
+  };
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated background grid */}
@@ -85,12 +98,10 @@ const Hero = () => {
               size="lg"
               variant="outline"
               className="group border-2 border-primary/50 hover:border-primary hover:bg-primary/10 text-lg px-8 py-6 rounded-full transition-all duration-300"
-              asChild
+              onClick={handleDownloadResume}
             >
-              <a href="/Alok_Resume.pdf" target="_blank" rel="noopener noreferrer">
-                <Download className="mr-2 w-5 h-5 group-hover:animate-bounce" />
-                Download Resume
-              </a>
+              <Download className="mr-2 w-5 h-5 group-hover:animate-bounce" />
+              Download Resume
             </Button>
           </div>
         </div>

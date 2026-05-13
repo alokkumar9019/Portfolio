@@ -25,6 +25,20 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleDownloadResume = () => {
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "/Alok_Resume.pdf";
+    downloadLink.download = "Alok_Resume.pdf";
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+
+    setTimeout(() => {
+      window.open("/Alok_Resume.pdf", "_blank", "noopener,noreferrer");
+    }, 100);
+  };
+
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
@@ -68,12 +82,10 @@ const Navbar = () => {
               <Button
                 size="sm"
                 className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all duration-300 rounded-full shadow-[0_0_20px_hsla(189,94%,55%,0.3)]"
-                asChild
+                onClick={handleDownloadResume}
               >
-                <a href="/Alok_Resume.pdf" target="_blank" rel="noopener noreferrer">
-                  <Download className="mr-2 w-4 h-4" />
-                  Resume
-                </a>
+                <Download className="mr-2 w-4 h-4" />
+                Resume
               </Button>
             </div>
 
@@ -107,12 +119,10 @@ const Navbar = () => {
               <Button
                 size="sm"
                 className="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all duration-300 rounded-full"
-                asChild
+                onClick={handleDownloadResume}
               >
-                <a href="/Alok_Resume.pdf" target="_blank" rel="noopener noreferrer">
-                  <Download className="mr-2 w-4 h-4" />
-                  Download Resume
-                </a>
+                <Download className="mr-2 w-4 h-4" />
+                Download Resume
               </Button>
             </div>
           </div>
